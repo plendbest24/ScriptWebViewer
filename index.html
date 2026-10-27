@@ -1,9 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Hello World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Lengkap Pemula</title>
 </head>
 <body>
-    <h1>Selamat datang di halaman web pertamaku!</h1>
+
+    <!-- BAGIAN 1: HEADER (NAVIGASI) -->
+    <header>
+        <h1>Selamat Datang di Blog Belajar HTML</h1>
+        <p>Tempat terbaik untuk memulai perjalanan coding kamu.</p>
+        <nav>
+            <ul>
+                <li><a href="#artikel">Artikel Utama</a></li>
+                <li><a href="#tutorial">Daftar Tutorial</a></li>
+                <li><a href="#data-harga">Tabel Harga</a></li>
+                <li><a href="#kontak">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr> <!-- Garis pembatas horizontal -->
+
+    <!-- BAGIAN 2: KONTEN UTAMA (ARTIKEL) -->
+    <main>
+        <section id="artikel">
+            <h2>Mengapa Harus Belajar HTML Sekarang?</h2>
+            <p>Diterbitkan pada: <strong>27 Oktober 2026</strong> | Oleh: <em>Admin Pintar</em></p>
+            
+            <p>HTML adalah fondasi dari semua halaman web di internet. Tanpa HTML, browser tidak akan tahu bagaimana cara menampilkan teks, gambar, atau tombol kepada pengguna. Belajar HTML sangatlah mudah dan bisa diselesaikan dalam hitungan hari saja.</p>
+            
+            <p>Beberapa keuntungan belajar HTML antara lain:</p>
+            <ul>
+                <li>Langkah awal menjadi <b>Web Developer</b>.</li>
+                <li>Membantu memahami cara kerja SEO website.</li>
+                <li>Memudahkan modifikasi platform CMS seperti WordPress.</li>
+            </ul>
+            
+            <blockquote>"Cara terbaik untuk memprediksi masa depan adalah dengan coding hari ini." - Anonim</blockquote>
+        </section>
+
+        <hr>
+
+        <!-- BAGIAN 3: DAFTAR TUTORIAL & MULTIMEDIA -->
+        <section id="tutorial">
+            <h2>Tahapan Belajar Web Development</h2>
+            <ol>
+                <li>Belajar HTML Dasar (Struktur Teks)</li>
+                <li>Belajar CSS (Desain & Warna)</li>
+                <li>Belajar JavaScript (Interaksi & Logika)</li>
+            </ol>
+
+            <h3>Contoh Gambar Pendukung</h3>
+            <!-- Menggunakan gambar eksternal (Placeholder) -->
+            <img src="https://unsplash.com" alt="Kode HTML di layar komputer" width="400">
+        </section>
+
+        <hr>
+
+        <!-- BAGIAN 4: TABEL DATA -->
+        <section id="data-harga">
+            <h2>Daftar Harga Kelas Coding</h2>
+            <p>Berikut adalah estimasi biaya belajar berdasarkan tingkat kesulitan:</p>
+            
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th>Nama Kelas</th>
+                        <th>Durasi Belajar</th>
+                        <th>Tingkat Kesulitan</th>
+                        <th>Biaya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML & CSS Dasar</td>
+                        <td>2 Minggu</td>
+                        <td>Pemula</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Intermediate</td>
+                        <td>4 Minggu</td>
+                        <td>Menengah</td>
+                        <td>Rp 250.000</td>
+                    </tr>
+                    <tr>
+                        <td>Fullstack Node.js</td>
+                        <td>8 Minggu</td>
+                        <td>Mahir</td>
+                        <td>Rp 750.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- BAGIAN 5: FORMULIR INPUT (CONTACT FORM) -->
+        <section id="kontak">
+            <h2>Daftar Akun / Hubungi Kami</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendapatkan modul belajar gratis:</p>
+            
+            <form action="" method="POST">
+                <div>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label for="email">Alamat Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label for="gender">Pilih Paket:</label><br>
+                    <input type="radio" id="paket1" name="paket" value="gratis"> <label for="paket1">Paket Gratis</label><br>
+                    <input type="radio" id="paket2" name="paket" value="premium"> <label for="paket2">Paket Premium</label>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <label for="pesan">Pesan Tambahan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tulis pertanyaan Anda di sini..."></textarea>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <button type="submit">Kirim Formulir</button>
+                    <button type="reset">Hapus Semua</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- BAGIAN 6: FOOTER (HAK CIPTA) -->
+    <footer>
+        <p>&copy; 2026 Blog Belajar HTML. Dibuat dengan semangat oleh Pemula.</p>
+    </footer>
+
 </body>
 </html>
